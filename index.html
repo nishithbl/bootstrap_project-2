@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Online Book Store</title>
+  <style>
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+  }
+/*section {
+  width: 100%;
+  display: inline-block;
+  background: #333;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}*/
+.footer-distributed{
+  background: #6d6b6b;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  rgb(234, 178, 23);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  rgb(234, 178, 23);
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+  
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color: rgb(234, 178, 23);
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+  display:inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #d5d517;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+  .footer-distributed .footer-right .icons{
+    padding: 40px;
+    align-self: center;
+}
+
+}
+</style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.freeiconspng.com/thumbs/book-icon/book-icon-black-good-galleries--24.jpg" alt="" width="45px" height="45px">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJvb2t8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="..." width="500px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-size: 50pt;padding-left: 50px;padding-top: 50px;padding-bottom: 130px;padding-right: 50px;color: #f5f8f9;">WELCOME TO THE BOOKSTORE</h2>
+              <p style="font-size: 18pt;padding-left: 50px;padding-top: 30px;padding-bottom: 40px;padding: right 50px;">One stop solution for all your needs for the books.
+                Fiction,Non Fiction and Action Thriller each and every kind of books are available here.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG9wZW4lMjBib29rfGVufDB8fDB8fHww" class="d-block w-100" alt="..." width="500px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-size: 45pt;padding-left: 50px;padding-top: 50px;padding-bottom: 40px;padding-right: 45px;color: #460607;">MONSOON OFFER 50% OFF ON YOUR FAVOURITE BOOKS!</h2>
+              <p style="font-size: 18pt;padding-left: 50px;padding-top: 30px;padding-bottom: 50px;padding: right 50px;color:#0c0ce5ce">If you want to invest in your self invest in  a book.Hurry up! Get a book for yourself.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1553729784-e91953dec042?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="..." width="500px" height="500px">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="font-size: 50pt;padding-left: 50px;padding-top: 50px;padding-bottom: 150px;padding-right: 50px;color: #dcf30b;">STUDENT DISCOUNT AVAILABLE!</h2>
+              <p style="font-size: 18pt;padding-left: 50px;padding-top: 30px;padding-bottom: 40px;padding: right 50px;color:#fefeff">Register with your official college email and get 10% off in every purchase.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNHwwCGIg8AdP828pjUzmRolX57ud1N-F9cQ&s" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">THE ATOMIC HABITS</h5>
+                <p class="card-text">A supremely practical and useful book. James Clear distils the most fundamental information about habit formation, so you can accomplish more by focusing on less.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details.html" target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://images.unsplash.com/photo-1706849632709-f28f9ad7698f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGlraWdhaSUyMGJvb2t8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="..." width="225px" height="352px">
+              <div class="card-body">
+                <h5 class="card-title">IKIGAI</h5>
+                <p class="card-text">Ikigai reveals the secrets to their longevity and happiness: how they eat, how they move, how they work, how they foster collaboration and live better.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details1.html" target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1581527774i/41881472.jpg" class="card-img-top" alt="..." width="225px" height="352px">
+              <div class="card-body">
+                <h5 class="card-title">THE PSYCHOLOGY OF MONEY</h5>
+                <p class="card-text">The Psychology of Money is a collection of short stories exploring the strange ways people think about money. The author presents valuable lessons on money.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details2.html"target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://basecamp.com/assets/books/rework/rework-cover@2x-80707c3ae753c88f9b303ffa0c5890cc8afcb4d7eed55a818c3ab200ce1e444b.png" width="225px" height="327px"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">REWORK</h5>
+                <p class="card-text">Most business books give you the same old advice: Write a business plan, study the competition, seek investors, yadda yadda. If you're looking for a book like that, put this one back on the shelf.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details3.html" target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://m.media-amazon.com/images/I/71uAI28kJuL._AC_UF1000,1000_QL80_.jpg" height="352px"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ZERO TO ONE</h5>
+                <p class="card-text">Zero to One: Notes on Startups, or How to Build the Future is a 2014 book by the American entrepreneur and investor Peter Thiel co-written with Blake Masters.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details4.html" target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card" style="width: 22rem;">
+              <img src="https://therightbookstoreindia.com/wp-content/uploads/2021/09/1632472771.jpg" height="352px"class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">THE $100 STARTUP</h5>
+                <p class="card-text">Here, Chris Guillebeau shows you how to lead a life of adventure, meaning and purpose--and earn a good living. Provide valuable life lessons.</p>
+                <a href="#" class="btn btn-primary"><strong>Add to Cart</strong></a>
+                <a href="Book_Details/details5.html" target="_blank" class="btn btn-secondary"><strong>View Details</strong></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+<footer class="footer-distributed">
+      <div class="footer-left">
+
+        <h3>Book<span>Store</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Blog</a>
+        
+          <a href="#">Pricing</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Faq</a>
+          
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name"><strong>Book Store © 2015</strong></p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.555.555.5555</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        <br>
+      <div class="icons">
+        <img src="images/icons/facebook.jpg" alt=".." width="35px" height="35px"> 
+        <img src="images/icons/instagram.jpg" alt=".." width="35px" height="35px"> 
+        <img src="images/icons/twitter.jpg" alt=".." width="35px" height="35px">   
+      </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>
